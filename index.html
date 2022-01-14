@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="form" id="login-form">
+    <a href="#" class="form-logo">
+      <img src="./assets/logo.png" alt="">
+    </a>
+    <div class="form-group">
+      <input type="email" class="form-input" name="email" id="email" placeholder="Email">
+      <span class="form-input-icon err">
+        <i class='bx bxs-error-circle'></i>
+      </span>
+      <span class="form-input-icon success">
+        <i class='bx bx-check-circle'></i>
+      </span>
+      <span class="form-input-err-msg" data-err-for="email"></span>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-input" name="password" id="password" placeholder="Password">
+      <span class="form-input-icon err">
+        <i class='bx bxs-error-circle'></i>
+      </span>
+      <span class="form-input-icon success">
+        <i class='bx bx-check-circle'></i>
+      </span>
+      <span class="form-input-err-msg" data-err-for="password"></span>
+    </div>
+    <div class="form-group form-group-checkbox">
+      <input type="checkbox" name="remember" checked="checked" id="remember">
+      <label for="remember">
+        Remember Me
+        <i class="bx bx-check"></i>
+      </label>
+    </div>
+    <button class="form-btn" id="login-btn">Login</button>
+    <span class="form-delimiter">
+      or connect with
+    </span>
+    <div class="form-social">
+      <a href="#" class="form-social-item fb">
+        <i class='bx bxl-facebook'></i>
+      </a>
+      <a href="#" class="form-social-item twitter">
+        <i class='bx bxl-twitter'></i>
+      </a>
+      <a href="#" class="form-social-item github">
+        <i class='bx bxl-github'></i>
+      </a>
+    </div>
+    <span class="form-txt">
+      Don't have an account?
+      <a href="#">Register!</a>
+    </span>
+    <span class="form-txt">
+      <a href="#">forgot password?</a>
+    </span>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
